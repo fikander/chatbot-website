@@ -104,4 +104,4 @@ dist
 .tern-port
 
 keys
-src/config/dev
+src/config/dev.ts
