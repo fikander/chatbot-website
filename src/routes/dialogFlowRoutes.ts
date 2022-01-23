@@ -4,7 +4,6 @@ import { textQuery, eventQuery, getToken } from "../chatbot/chatbot";
 const router = Router();
 
 router.post("/api/df_text_query", async (req, res) => {
-    console.log(req.body);
     let responses = await textQuery(req.body.text, req.body.userID, req.body.parameters);
     res.send(responses[0].queryResult);
 });
