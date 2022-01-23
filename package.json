@@ -9,7 +9,7 @@
     "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src",
     "watch-ts": "tsc -w",
     "watch-node": "nodemon dist/index.js",
-    "watch-all": "npm run watch-ts & npm run watch-node",
+    "dev": "npm run watch-ts & npm run watch-node",
     "deploy": "git add . && git commit -m Heroku && git push origin && git push heroku main"
   },
   "repository": {
