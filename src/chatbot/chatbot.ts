@@ -1,5 +1,5 @@
 import dialogflow from "@google-cloud/dialogflow";
-import config from "../config/keys";
+import config from "../config";
 import  { struct } from "pb-util";
 
 const projectId = config.googleProjectId;
