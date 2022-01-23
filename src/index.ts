@@ -3,6 +3,8 @@ import path from "path";
 import bodyParser from "body-parser";
 import dialogFlowRoutes from "./routes/dialogFlowRoutes";
 
+console.log("credentials: " + process.env.GOOGLE_APPLICATION_CREDENTIALS);
+
 const app = express();
 
 app.use(bodyParser.json());
