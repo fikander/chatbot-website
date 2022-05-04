@@ -10,7 +10,8 @@
     "frontend": "npm run start --prefix client",
     "dev": "concurrently \"npm run watch-ts\" \"npm run watch-node\" \"npm run frontend\"",
     "deploy": "git add . && git commit -m Heroku && git push origin && git push heroku main",
-    "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src"
+    "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm i --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",

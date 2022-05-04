@@ -18,8 +18,8 @@ router.get("/api/get_client_token", async (req, res) => {
     res.send({ token });
 });
 
-router.get("/", (req, res) => {
-    res.send("Hello World!");
-});
+// router.get("/", (req, res) => {
+//     res.send("Hello World!");
+// });
 
 export default router;
